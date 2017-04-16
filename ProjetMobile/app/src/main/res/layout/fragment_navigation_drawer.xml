@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark">
+
+    <LinearLayout
+        android:id="@+id/tope"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="7dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/tope"
+        android:background="@android:color/holo_blue_dark">
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/banar1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            app:view_backgroundColor="@color/windowBackground"
+            app:view_borderColor="@color/windowBackground"
+            app:view_borderWidth="4dp"
+            app:view_shadowDx="2dp"
+            app:view_shadowDy="0dp"
+            app:view_shadowRadius="2dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/earn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/amrine_moussab_amine"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/earn"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#ffffff"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/earn"
+        android:background="@color/colorPrimary"
+        android:divider="@color/colorPrimary">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/drawer_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
